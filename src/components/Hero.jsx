@@ -3,13 +3,13 @@ import React from "react";
 const Hero = () => {
   return (
     <main>
-      <section className="bg-[#3DC3E4] text-center">
-        <div className="text-[#FFFFFF]">
-          <h1 className="text-8xl font-bold mb-6 text-center uppercase">
-            Welcome to Fortune Connect
+      <section className="bg-[#3DC3E4] text-center min-h-screen flex flex-col justify-center items-center">
+        <div className="text-[#FFFFFF] w-[70%] m-auto">
+          <h1 className="text-[60px] font-bold mb-6 text-center uppercase font-black leading-[100px]">
+            Connecting Local Capital <br /> To Investment Ideas
           </h1>
-          <p className="text-4xl mb-8">
-            A platform that connects you to success.
+          <p className="text-3xl mb-8">
+            Empowering communities to build wealth through collective investment.
           </p>
         </div>
         <div className="mt-6">
