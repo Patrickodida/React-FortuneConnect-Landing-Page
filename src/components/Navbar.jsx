@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#3DC3E4] text-[#0F7D95] md:text-[#FFFFFF] shadow-md py-8">
+    <header className="bg-[#3DC3E4] text-[#FFFFFF] md:text-[#FFFFFF] shadow-md py-8">
       <nav className="relative container mx-auto flex justify-between items-center w-[90%] m-auto max-w-[1280px]">
         {/* Logo */}
         <div className="text-2xl font-semibold ">
@@ -18,7 +18,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 uppercase">
+        <ul className="hidden md:flex space-x-6 uppercase text-[#0F7D95] md:text-[#FFFFFF]">
           <li>
             <Link to="/" className="hover:text-[#0F7D95] text-xl font-bold">
               Home
@@ -55,9 +55,9 @@ const Header = () => {
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {menuOpen ? (
-              <i class='bx bx-x text-4xl text-[#FFFFFF]'></i>
+              <i class='bx bx-x text-6xl text-[#FFFFFF]'></i>
             ) : (
-              <i class='bx bx-menu text-4xl text-[#FFFFFF]'></i>
+              <i class='bx bx-menu text-6xl text-[#FFFFFF]'></i>
             )}
           </button>
         </div>
@@ -66,7 +66,7 @@ const Header = () => {
         <ul
           className={`${
             menuOpen ? "block" : "hidden"
-          } fixed top-0 left-0 h-screen w-3/4 w-full z-50 bg-[#FFFFFF] text-center md:hidden flex flex-col space-y-4 py-6 uppercase space-y-12 align-left`}
+          } fixed top-0 left-0 h-screen w-3/4 w-full z-50 bg-[#FFFFFF] text-[#0F7D95] text-center md:hidden flex flex-col space-y-4 py-6 uppercase space-y-12 pt-10`}
         >
           <li>
             <Link
@@ -111,25 +111,4 @@ const Header = () => {
   );
 };
 
-/* const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-    return (
-        <header className="bg-[#3DC3E4] text-[#FFFFFF] shadow-md py-8">
-            <nav className="container mx-auto flex justify-between w-[90%] m-auto m-w-[1280px] items-center">
-                <div className="text-2xl font-semibold "><Link to="/">FORTUNECONNECT</Link></div>
-                <ul className="flex space-x-6 uppercase">
-                    <li><Link to="/" className="hover:text-[#0F7D95] text-xl font-bold">Home</Link></li>
-                    <li><HashLink smooth to="/#features" className="hover:text-[#0F7D95] text-xl font-bold">Features</HashLink></li>
-                    <li><Link to="/pricing" className="hover:text-[#0F7D95] text-xl font-bold">Pricing</Link></li>
-                    <li><Link to="/signup" className="bg-white text-[#0F7D95] rounded-md font-semibold py-3 px-8 hover:bg-[#0F7D95] hover:text-[#FFFFFF] text-xl">Sign Up</Link></li>
-                </ul>
-            </nav>
-        </header>
-    )
-} */
 export default Header;
