@@ -1,5 +1,5 @@
 import React from 'react';
-import Invimg1 from '../images/inv-management1.jpeg'
+import Invimg1 from '../images/inv-mgt2.jpeg'
 import Invopport from '../images/inv-opportunity.jpeg'
 import Invportfolio from '../images/portfolio-img.jpeg'
 
@@ -18,7 +18,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <div key={index} className="p-6 bg-white rounded-lg shadow-md">
                 <img src={feature.image} alt={`${feature.name}`}
-
+                className="w-full h-48 object-cover rounded-t-lg"
                 />
               <h3 className="text-xl font-bold mt-4">{feature.title}</h3>
               <p className="text-gray-600 mt-2">{feature.description}</p>

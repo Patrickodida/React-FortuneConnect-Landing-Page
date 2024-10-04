@@ -4,9 +4,9 @@ import Image2 from '../images/image2.jpeg'
 import Image3 from '../images/image3.jpeg'
 
 const testimonials = [
-  { name: 'John Doe', feedback: 'This platform changed my life.', image: Image1 },
-  { name: 'Jane Smith', feedback: 'FortuneConnect helped my business grow.', image: Image2 },
-  { name: 'Sam Johnson', feedback: 'Highly recommend to everyone!', image: Image3 },
+  { name: 'John Doe', feedback: 'FortuneConnect helped me manage our investment club seamlessly. The platform’s collective investment tools make decision-making and tracking contributions so much easier!', image: Image1 },
+  { name: 'Jane Smith', feedback: 'The curated investment opportunities on FortuneConnect allowed me to invest in high-potential projects. It’s the best platform I’ve used to grow my portfolio.', image: Image2 },
+  { name: 'Sam Johnson', feedback: 'FortuneConnect’s real-time portfolio tracking has been a game-changer for me. I can now monitor my club’s performance and make informed decisions instantly.', image: Image3 },
 ];
 
 const Testimonials = () => {

@@ -6,17 +6,17 @@ const pricingPlans = [
   {
     name: "Basic",
     price: "40,000 UGX/month",
-    features: ["Feature 1", "Feature 2", "Feature 3"],
+    features: ["Access to Investment Opportunities", "Basic Portfolio Tracking", "Basic Reports"],
   },
   {
     name: "Pro",
     price: "75,000 UGX/month",
-    features: ["Feature 1", "Feature 2", "Feature 3"],
+    features: ["Extended Access to Investment Opportunities", "Advanced Portfolio Tracking", "Customizable Reports"],
   },
   {
     name: "Enterprise",
     price: "150,000 UGX/month",
-    features: ["Feature 1", "Feature 2", "Feature 3"],
+    features: ["Unlimited Access to Investment Opportunities", "Full Portfolio Tracking & Analytics", "Comprehensive Reports"],
   },
 ];
 
