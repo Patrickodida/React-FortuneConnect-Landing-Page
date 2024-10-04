@@ -20,10 +20,11 @@ const pricingPlans = [
   },
 ];
 
-const Pricingpage = () => {
+const Pricing = () => {
   return (
-    <main>
+    <>
       <Navbar />
+      <main>
       <section className="py-20 bg-gray-100">
         <div className="container mx-auto text-center w-[90%] m-auto">
           <h2 className="text-3xl font-bold mb-12">Choose Your Plan</h2>
@@ -53,9 +54,10 @@ const Pricingpage = () => {
           </div>
         </div>
       </section>
+      </main>
       <Footer />
-    </main>
+    </>
   );
 };
 
-export default Pricingpage;
+export default Pricing;

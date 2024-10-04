@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <main>
       <section className="bg-[#3DC3E4] text-center min-h-screen flex flex-col justify-center items-center">
-        <div className="text-[#FFFFFF] w-[70%] m-auto">
+        <div className="text-[#FFFFFF] w-[70%] mx-auto">
           <h1 className="text-[60px] font-bold mb-6 text-center uppercase font-black leading-[100px]">
             Connecting Local Capital <br /> To Investment Ideas
           </h1>
