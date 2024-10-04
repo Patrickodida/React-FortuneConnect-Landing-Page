@@ -1,0 +1,8 @@
+:root {
+    --ff-body1: "Poppins", sans-serif;
+    --ff-body2: "Roboto, sans-serif"
+}
+
+body {
+    font-family: var(--ff-body2)
+}
