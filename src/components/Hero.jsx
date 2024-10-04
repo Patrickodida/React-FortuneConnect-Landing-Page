@@ -5,12 +5,12 @@ import { HashLink } from 'react-router-hash-link';
 const Hero = () => {
   return (
     <main>
-      <section className="bg-[#3DC3E4] text-center min-h-screen flex flex-col  items-center">
-        <div className="text-[#FFFFFF] w-[70%] mx-auto">
-          <h1 className="text-[60px] font-bold mb-6 text-center uppercase font-extrabold leading-[90px]">
+      <section className="bg-[#3DC3E4] text-center min-h-screen flex flex-col justify-center  md:items-center">
+        <div className="text-[#FFFFFF] w-[90%] md:w-[70%] mx-auto">
+          <h1 className="text-[40px] md:text-[60px] font-bold mb-6 text-center uppercase font-extrabold leading-[50px] md:leading-[90px]">
             Connecting Local Capital <br /> To Investment Ideas
           </h1>
-          <p className="text-2xl m-8">
+          <p className="text-xl md:text-2xl m-8">
             Empowering communities to build wealth through collective investment.
           </p>
         </div>
