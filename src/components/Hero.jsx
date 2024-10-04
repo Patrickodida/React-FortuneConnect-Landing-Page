@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
 
 const Hero = () => {
   return (
@@ -20,12 +21,12 @@ const Hero = () => {
           >
             Get Started
           </Link>
-          <Link
-            to="/"
+          <HashLink
+            smooth to="/#features"
             className="bg-[#0F7D95] text-[white] text-2xl py-4 px-8 rounded-lg font-semibold hover:bg-[white] hover:text-[#0F7D95] transition-colors duration-300"
           >
             Learn More
-          </Link>
+          </HashLink>
         </div>
       </section>
     </main>
