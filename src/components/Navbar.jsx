@@ -12,15 +12,12 @@ const Header = () => {
   return (
     <header className="bg-[#3DC3E4] text-[#FFFFFF] md:text-[#FFFFFF] shadow-md py-8">
       <nav className="relative container mx-auto flex justify-between items-center w-[90%] m-auto max-w-[1280px]">
-        {/* Logo */}
-        <div className="text-2xl font-semibold ">
+        <div className="text-lg font-semibold ">
           <Link to="/">FORTUNECONNECT</Link>
         </div>
-
-        {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 uppercase text-[#0F7D95] md:text-[#FFFFFF]">
           <li>
-            <Link to="/" className="hover:text-[#0F7D95] text-xl font-bold">
+            <Link to="/" className="hover:text-[#0F7D95] text-lg font-semibold">
               Home
             </Link>
           </li>
@@ -28,7 +25,7 @@ const Header = () => {
             <HashLink
               smooth
               to="/#features"
-              className="hover:text-[#0F7D95] text-xl font-bold"
+              className="hover:text-[#0F7D95] text-lg font-semibold"
             >
               Features
             </HashLink>
@@ -36,7 +33,7 @@ const Header = () => {
           <li>
             <Link
               to="/pricing"
-              className="hover:text-[#0F7D95] text-xl font-bold"
+              className="hover:text-[#0F7D95] text-lg font-semibold"
             >
               Pricing
             </Link>
@@ -44,7 +41,7 @@ const Header = () => {
           <li>
             <Link
               to="/login"
-              className="text-[#0F7D95] font-semibold hover:text-[#FFFFFF] text-xl"
+              className="text-[#0F7D95] font-semibold hover:text-[#FFFFFF] text-lg"
             >
               Log In
             </Link>
@@ -52,7 +49,7 @@ const Header = () => {
           <li>
             <Link
               to="/signup"
-              className="bg-white text-[#0F7D95] rounded-md font-semibold py-3 px-8 hover:bg-[#0F7D95] hover:text-[#FFFFFF] text-xl"
+              className="bg-white text-[#0F7D95] rounded-md font-semibold py-2 px-6 hover:bg-[#0F7D95] hover:text-[#FFFFFF] text-lg"
             >
               Sign Up
             </Link>
@@ -80,7 +77,7 @@ const Header = () => {
             <Link
               to="/"
               onClick={toggleMenu}
-              className="hover:text-[#0F7D95] text-xl font-bold"
+              className="hover:text-[#0F7D95] text-lg font-bold"
             >
               Home
             </Link>
@@ -90,7 +87,7 @@ const Header = () => {
               smooth
               to="/#features"
               onClick={toggleMenu}
-              className="hover:text-[#0F7D95] text-xl font-bold"
+              className="hover:text-[#0F7D95] text-lg font-bold"
             >
               Features
             </HashLink>
@@ -99,7 +96,7 @@ const Header = () => {
             <Link
               to="/pricing"
               onClick={toggleMenu}
-              className="hover:text-[#0F7D95] text-xl font-bold"
+              className="hover:text-[#0F7D95] text-lg font-bold"
             >
               Pricing
             </Link>
@@ -108,7 +105,16 @@ const Header = () => {
             <Link
               to="/signup"
               onClick={toggleMenu}
-              className="bg-white text-[#0F7D95] rounded-md font-semibold py-3 px-8 hover:bg-[#0F7D95] hover:text-[#FFFFFF] text-xl"
+              className="text-[#0F7D95] font-semibold hover:text-[#FFFFFF] text-lg"
+            >
+              Log In
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/signup"
+              onClick={toggleMenu}
+              className="bg-white text-[#0F7D95] rounded-md font-semibold py-3 px-8 hover:bg-[#0F7D95] hover:text-[#FFFFFF] text-lg"
             >
               Sign Up
             </Link>

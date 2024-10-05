@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const Sidebar = () => {
   return (
-    <div className="h-screen w-64 bg-[#3DC3E4] text-white">
+    <div className="md:h-screen w-full md:w-64 bg-[#3DC3E4] text-white text-center md:text-left">
         <div className='m-auto w-[90%]'>
       <nav className="mt-6 font-bold">
         <ul>
