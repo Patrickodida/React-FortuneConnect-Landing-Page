@@ -60,7 +60,7 @@ const PerformanceChart = ({ investments }) => {
   };
   return (
     <div className="bg-white shadow-md rounded-lg p-4 m-2 h-full">
-      <h3 className="text-lg font-semibold text-gray-700 mb-2">Performance Chart</h3>
+      <h3 className="text-lg font-semibold text-gray-700 mb-2 text-center">Performance Chart</h3>
       <div className='h-full'>
         <Line data={data} options={options} />
       </div>

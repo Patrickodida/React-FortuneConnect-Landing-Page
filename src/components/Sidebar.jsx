@@ -8,7 +8,7 @@ const Sidebar = () => {
       <nav className="mt-6 font-bold">
         <ul>
           <li className="p-3">
-            <Link to="/profile" className="hover:text-[#0F7D95] text-xl">
+            <Link to="/dashboard" className="hover:text-[#0F7D95] text-xl">
             <i class='bx bxs-dashboard mr-2 text-2xl'></i>
               Dashboard
             </Link>
