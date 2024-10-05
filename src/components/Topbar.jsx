@@ -1,5 +1,6 @@
 import React from 'react'
 import UserImage from '../images/user-reg-circle.png'
+import { Link } from "react-router-dom"
 
 const Topbar = () => {
   return (
@@ -7,7 +8,7 @@ const Topbar = () => {
         <div className='flex justify-between items-center w-[98%] m-auto max-w-[1280px]'>
 
       <div>
-        <h1 className="text-xl font-semibold">FORTUNECONNECT</h1>
+        <Link to="/" className="text-xl font-semibold">FORTUNECONNECT</Link>
       </div>
       <div className="flex items-center space-x-4">
         <div className="flex items-center space-x-2">

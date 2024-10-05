@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { userData } from "../data/user.js"
+import { useNavigate } from "react-router-dom"
 
 const Signup = () => {
+  const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -24,8 +27,15 @@ const Signup = () => {
         if(formData.password !== formData.confirmPassword){
             alert("Passwords do not match");
             return;
+        } 
+        if (!formData.name || !formData.email || !formData.password){
+          alert("All the fields are required!");
+          return;
         }
-        console.log(`Form Submitted`, formData);  
+        let userData = [];
+        userData.push(formData);
+        localStorage.setItem("userData", JSON.stringify(userData));
+        navigate("/login");
     };
     
   return (
