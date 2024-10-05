@@ -43,6 +43,14 @@ const Header = () => {
           </li>
           <li>
             <Link
+              to="/login"
+              className="text-[#0F7D95] font-semibold hover:text-[#FFFFFF] text-xl"
+            >
+              Log In
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/signup"
               className="bg-white text-[#0F7D95] rounded-md font-semibold py-3 px-8 hover:bg-[#0F7D95] hover:text-[#FFFFFF] text-xl"
             >
