@@ -1,9 +1,9 @@
 import React from 'react'
 
-const InvestmentCard = ({ name, performance, status }) => {
+const InvestmentCard = ({ name, performance, status, bgColor }) => {
   return (
     <div>
-      <div className="bg-white shadow-md rounded-lg p-4 m-2 md:text-left text-center flex flex-col items-center justify-center">
+      <div className="bg-white shadow-md rounded-lg p-4 m-2 md:text-left text-center flex flex-col items-center justify-center" style={{ backgroundColor: bgColor }}>
       <h3 className="text-lg font-semibold text-gray-700">{name}</h3>
       <p className={`text-sm ${performance > 0 ? "text-green-500" : "text-red-500"}`}>
         Performance: {performance}%

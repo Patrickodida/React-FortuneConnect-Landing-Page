@@ -26,6 +26,7 @@ const Dashboard = () => {
                   name={investment.name}
                   performance={investment.performance}
                   status={investment.status}
+                  bgColor={investment.bgColor}
                 />
               ))}
             </div>
@@ -39,6 +40,7 @@ const Dashboard = () => {
                   key={index}
                   message={notification.message}
                   date={notification.date}
+                  bgColor={notification.bgColor}
                 />
               ))}
             </div>
