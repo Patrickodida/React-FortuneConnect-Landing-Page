@@ -32,9 +32,29 @@ const Signup = () => {
           alert("All the fields are required!");
           return;
         }
-        let userData = [];
-        userData.push(formData);
-        localStorage.setItem("userData", JSON.stringify(userData));
+
+        //Retrieve current user from localStorage
+        const storedUserData = JSON.parse(localStorage.getItem("userData")) || [];
+
+        // Check if the user email already exists
+        const userExists = storedUserData.some((user)=> user.email === formData.email);
+        if(userExists){
+          alert("User with this email already exists!");
+          return;
+        }
+
+        // Add the new user to the array
+        const newUser = {
+        id: storedUserData.length + 1,
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+    };
+
+    // update local storage with new user Data
+    const updatedUserData = [...storedUserData, newUser];
+    localStorage.setItem("userData", JSON.stringify(updatedUserData));
+
         navigate("/login");
     };
     

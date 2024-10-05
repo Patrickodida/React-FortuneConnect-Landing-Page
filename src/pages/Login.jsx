@@ -27,15 +27,26 @@ const Login = () => {
           alert("All the fields are required!");
           return;
         }
-        const verifyEmail = userData && userData.filter(user=>user.email === formData.email);
-        if(!verifyEmail){
-            alert("Wrong email password combination!");
-        }
 
-        const verifyPassword = userData && userData.filter(user=>user.password === formData.password);
-        if(!verifyPassword){
-            alert("Wrong email password combination!");
-        }
+        // Retrieve user data from localStorage
+    const storedUserData = JSON.parse(localStorage.getItem("userData")) || [];
+
+    // Check if the email exists
+    const user = storedUserData.find((user) => user.email === formData.email);
+    if (!user) {
+        alert("Wrong email or password!");
+        return;
+    }
+
+    // Check if the password matches
+    if (user.password !== formData.password) {
+        alert("Wrong email or password!");
+        return;
+    }
+
+    // Store the logged-in user's details in localStorage
+    localStorage.setItem("loggedInUser", JSON.stringify(user));
+
         navigate("/dashboard");
     };
 
