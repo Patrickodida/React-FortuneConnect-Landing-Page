@@ -4,6 +4,7 @@ import Topbar from "../components/Topbar";
 import Sidebar from "../components/Sidebar";
 import InvestmentCard from "../components/InvestmentCard";
 import NotificationsCard from "../components/NotificationsCard";
+import PerformanceChart from "../components/PerformanceChart";
 import { investments } from "../data/investment";
 import { notifications } from "../data/notification";
 
@@ -44,6 +45,11 @@ const Dashboard = () => {
                 />
               ))}
             </div>
+          </div>
+          {/* Performance Chart */}
+          <div className="mt-8">
+            <h2 className="text-xl font-semibold mb-4 text-center">Investment Performance</h2>
+            <PerformanceChart investments={investments} />
           </div>
         </main>
       </div>
