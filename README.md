@@ -6,6 +6,7 @@
 
 - [Project Overview](#project-overview)
 - [Features](#features)
+- [How to Use the Platform](#how-to-use-the-platform)
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
 - [Project Structure](#project-structure)
@@ -41,6 +42,41 @@ The platform is designed to be fully responsive and aims to provide a seamless u
     - A simple chart showing investment performance
   - Notifications section for recent activities
   - Top bar with user info (name, avatar, sign-out button)
+
+---
+
+## How to Use the Platform
+
+### 1. Sign Up
+
+To create a new account on FortuneConnect:
+
+- Navigate to the **Signup** page from the landing page.
+- Fill in the required fields such as your name, email address, password, and confirm password.
+- Click the **Sign Up** button to create your account.
+- You will be redirected to the **Login** page.
+
+### 2. Log In
+
+After signing up, you can log in to your account:
+
+- Click on the **Login** button on the landing page or the top navigation bar.
+- Enter your email address and password.
+- Click the **Log In** button to access your dashboard.
+
+### 3. Access Your Dashboard
+
+Once logged in, you will be redirected to your **User Dashboard**. Here’s what you can do:
+
+- **View Your Investments**: Your dashboard displays a summary of your investments, including the total portfolio value and a detailed list of individual investments with their performance and status.
+- **Check Notifications**: Look for any recent notifications or updates in the notifications section.
+- **Analyze Performance**: Utilize the performance chart to assess your investment progress over time.
+
+### 5. Log Out
+
+To securely log out of your account:
+
+- Click on the **Sign Out** button on the **Topbar**.
 
 ---
 
