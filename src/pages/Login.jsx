@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { userData } from '../data/user';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {

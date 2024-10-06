@@ -52,8 +52,10 @@ const Dashboard = () => {
               {notifications.map((notification, index) => (
                 <NotificationsCard
                   key={index}
+                  title={notification.title}
                   message={notification.message}
                   date={notification.date}
+                  actionText={notification.actionText}
                   bgColor={notification.bgColor}
                 />
               ))}
