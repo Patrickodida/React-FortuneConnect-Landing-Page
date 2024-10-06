@@ -20,9 +20,9 @@ const Dashboard = () => {
       <div>
         <Topbar />
       </div>
-      <div className="flex flex-col md:flex-row md:h-screen">
+      <div className="flex flex-col md:flex-row md:h-screen pt-16">
         <Sidebar />
-        <main className="content flex-1 p-4 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
+        <main className="md:ml-64 content flex-1 p-4 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-4xl mx-auto">
           {/* Total Investment Portfolio Card */}
           <div className="mt-8 text-center flex justify-center">
             <div className="w-full max-w-md">

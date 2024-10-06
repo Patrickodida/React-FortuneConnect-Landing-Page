@@ -18,7 +18,7 @@ const Topbar = () => {
   };
 
   return (
-    <div className="p-4 bg-[#0F7D95] text-white shadow-md">
+    <div className="fixed top-0 left-0 w-full p-4 bg-[#0F7D95] text-white shadow-md z-50">
       <div className="flex justify-between items-center w-[98%] m-auto max-w-[1280px]">
         <div>
           <Link to="/" className="text-sm md:text-xl font-semibold">
