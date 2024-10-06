@@ -18,6 +18,7 @@ The **FortuneConnect Platform** consists of two main components:
 
 1. A **Landing Page** that provides potential users with information about the platform's mission, features, testimonials, and a call to action.
 2. A **User Dashboard** where registered users can view and manage their investment portfolios, check notifications, and update profile settings.
+   The Dashboard displays dynamic content, the Logged in user is able to access his investments, performance, status, and performance chart.
 
 The platform is designed to be fully responsive and aims to provide a seamless user experience.
 

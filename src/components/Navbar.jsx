@@ -6,6 +6,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
+    console.log("Menu Open Status:", !menuOpen); 
     setMenuOpen(!menuOpen);
   };
 
@@ -60,9 +61,9 @@ const Header = () => {
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {menuOpen ? (
-              <i class='bx bx-x text-6xl text-[#FFFFFF]'></i>
+              <i className='bx bx-x text-6xl text-[#FFFFFF]'></i>
             ) : (
-              <i class='bx bx-menu text-6xl text-[#FFFFFF]'></i>
+              <i className='bx bx-menu text-6xl text-[#FFFFFF]'></i>
             )}
           </button>
         </div>
@@ -71,7 +72,7 @@ const Header = () => {
         <ul
           className={`${
             menuOpen ? "block" : "hidden"
-          } fixed top-0 left-0 h-screen w-3/4 w-full z-50 bg-[#FFFFFF] text-[#0F7D95] text-center md:hidden flex flex-col space-y-4 py-6 uppercase space-y-12 pt-10`}
+          } fixed top-0 left-0 h-screen w-3/4 z-50 bg-[#FFFFFF] text-[#0F7D95] text-center md:hidden flex flex-col space-y-4 py-6 uppercase space-y-12 pt-10`}
         >
           <li>
             <Link

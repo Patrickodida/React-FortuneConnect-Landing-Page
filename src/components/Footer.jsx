@@ -39,12 +39,13 @@ function Footer(){
                 <div className="footer-social-links">
                     <h3 className="text-[1.65rem] font-bold mb-8 flex justify-center">Contact Us</h3>
                     <ul className="social-links flex justify-center">
-                        <li className="mr-4" >
-                            <Link><i className='bx bxl-twitter text-[1.75rem] text-[#FFFFFF] hover:opacity-75'></i></Link>
-                        </li>
                         <li className="mr-4">
-                            <Link><i className='bx bxl-linkedin text-[1.75rem] text-[#FFFFFF] hover:opacity-75' ></i></Link>
+                            <Link to='https://www.linkedin.com/company/fortune-techno-services-ltd/'><i className='bx bxl-linkedin text-[1.75rem] text-[#FFFFFF] hover:opacity-75' ></i></Link>
                         </li>
+                        <li className="mr-4" >
+                            <Link to=''><i className='bx bxl-twitter text-[1.75rem] text-[#FFFFFF] hover:opacity-75'></i></Link>
+                        </li>
+                        
                         <li className="mr-4">
                             <Link><i className='bx bxl-github text-[1.75rem] text-[#FFFFFF] hover:opacity-75'></i></Link>
                         </li>
