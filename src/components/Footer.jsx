@@ -20,7 +20,7 @@ function Footer(){
                     </ul>
                 </div>
                 <div className="footer-links text-center mb-6">
-                    <h3 className="text-[2.25rem] font-bold mb-1">FortuneConnect</h3>
+                    <h3 className="text-[1.65rem] font-bold mb-1">FortuneConnect</h3>
                     <ul>
                         <li className="text-[1.1rem] mb-2 hover:text-white transition-colors duration-300">
                             <Link>About FortuneConnect</Link>
