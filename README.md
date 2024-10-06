@@ -47,7 +47,7 @@ The platform is designed to be fully responsive and aims to provide a seamless u
 ## Technologies Used
 
 - **ReactJS**: A JavaScript library for building user interfaces.
-- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.(Note: Dependencies like Tailwind CSS are already included in package.json, so no additional setup is needed after installation.)
 - **React Router**: Used for routing in the React application.
 
 ---
@@ -59,7 +59,7 @@ The platform is designed to be fully responsive and aims to provide a seamless u
 Ensure you have the following installed on your machine:
 
 - **npm** (or **yarn**) package manager
-- **Git** (optional, but recommended)
+- **Git**
 
 ### Steps
 
@@ -68,3 +68,91 @@ Ensure you have the following installed on your machine:
    ```bash
    git clone https://github.com/Patrickodida/React-FortuneConnect-Landing-Page.git
    ```
+
+2. **Navigate into the Project directory**
+
+```bash
+cd React-FortuneConnect-Landing-Page
+```
+
+3. **Install Dependencies**
+
+```bash
+npm install
+```
+
+4. **Start the development server:**
+
+```bash
+npm run dev
+```
+
+5. **Access the application:**
+
+Navigate to http://localhost:5173 in your browser to view the platform.
+
+6. **Build for production:**
+
+To generate a production build of the project, run:
+
+```bash
+npm run build
+```
+
+7. **Project Structure**
+
+Here is the project structure for the FortuneConnect Platform:
+
+```bash
+  React-FortuneConnect-Landing-Page/
+├── public/                # Publicly accessible static assets
+│   ├── index.html         # Main HTML file
+│   └── favicon.ico        # Favicon for the app
+├── src/                   # Source code for the React app
+│   ├── assets/            # Images, logos, and other static assets
+│   ├── components/        # Reusable components
+│   │   ├── Footer.jsx        # Footer section for landing and dashboard pages
+│   │   ├── Features.jsx      # Features section on the landing page
+│   │   ├── Hero.jsx          # Hero section with a call to action
+│   │   ├── InvestmentCard.jsx # Displays individual investment details
+│   │   ├── Navbar.jsx        # Navigation bar for the landing page
+│   │   ├── Notification.jsx  # Notification section for user updates
+│   │   ├── PerformanceChart.jsx # Chart to display investment performance
+│   │   ├── PortfolioCard.jsx  # Displays portfolio details in the dashboard
+│   │   ├── Sidebar.jsx       # Sidebar navigation for the dashboard
+│   │   ├── Topbar.jsx        # Top bar component showing user info and sign-out
+│   │   └── Testimonials.jsx  # Testimonials section on the landing page
+│   ├── pages/              # Pages for routing
+│   │   ├── Home.jsx         # Landing page of the application
+│   │   ├── Login.jsx        # User login page
+│   │   ├── Signup.jsx       # User signup page
+│   │   ├── Pricing.jsx      # Pricing information page
+│   │   └── Dashboard.jsx    # User dashboard page
+│   ├── data/               # Mock data used within the application
+│   │   ├── investment.js    # Data for investments
+│   │   ├── notification.js  # Data for notifications
+│   │   └── user.js          # Data for user information
+│   ├── images/             # All images used in the app
+│   ├── App.js              # Main App component where routing and layout are handled
+│   ├── index.js            # Entry point for the React application
+│   ├── index.css           # Main stylesheet where Tailwind directives are imported
+├── tailwind.config.js       # Tailwind CSS configuration file
+├── postcss.config.js        # PostCSS configuration for processing Tailwind
+├── package.json             # Project metadata and dependencies
+├── .gitignore               # Git ignored files (e.g., node_modules)
+└── README.md                # Project README file
+```
+
+### Key Folders and Files:
+
+- **components/**: Contains reusable components like the footer, sidebar, hero section, and charts used throughout the platform.
+
+- **pages/:** Includes the core pages of the application like the home (landing) page, login, signup, pricing, and dashboard.
+
+- **data/:** Holds mock data files:
+
+- **_investment.js:_** Contains mock data for investments (e.g., investment name, performance, status).
+- **_notification.js:_** Contains mock data for user notifications (e.g., recent activities, messages).
+- **_user.js:_** Contains mock data for user profiles (e.g., name, avatar, and profile data).
+
+- **images/:** This folder holds all the images used in the application, such as logos, icons, and other visuals.
