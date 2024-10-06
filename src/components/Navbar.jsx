@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#3DC3E4] text-[#FFFFFF] md:text-[#FFFFFF] shadow-md py-8">
+    <header className="bg-[#3DC3E4] text-[#FFFFFF] md:text-[#FFFFFF] shadow-md py-6">
       <nav className="relative container mx-auto flex justify-between items-center w-[90%] m-auto max-w-[1280px]">
         <div className="text-lg font-semibold ">
           <Link to="/">FORTUNECONNECT</Link>
@@ -61,9 +61,9 @@ const Header = () => {
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {menuOpen ? (
-              <i className='bx bx-x text-6xl text-[#FFFFFF]'></i>
+              <i className='bx bx-x text-5xl text-[#FFFFFF]'></i>
             ) : (
-              <i className='bx bx-menu text-6xl text-[#FFFFFF]'></i>
+              <i className='bx bx-menu text-5xl text-[#FFFFFF]'></i>
             )}
           </button>
         </div>

@@ -11,7 +11,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-20 bg-[#3DC3E4]">
+    <section id="features" className="pb-10 bg-[#3DC3E4]">
       <div className="container mx-auto text-center w-[90%] m-auto m-w-[1280px]">
         <h2 className="text-3xl font-bold mb-12 text-[white]">Key Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
